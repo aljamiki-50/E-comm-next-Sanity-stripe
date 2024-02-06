@@ -26,6 +26,9 @@ async function GetTypeProducgt(slug) {
 
   return data;
 }
+//  every click will be hitting will be counted as a revalidation
+export const dynamic = 'force-dynamic'
+
 
 const page = async (params) => {
   const typeProduct = await GetTypeProducgt(params.params.category);

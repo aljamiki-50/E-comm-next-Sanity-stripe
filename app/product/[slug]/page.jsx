@@ -23,7 +23,7 @@ async function GetCertainProduct(slug) {
   const data = await client.fetch(query);
   return data;
 }
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 const ProudctPage = async ({ params }) => {
   // const Product = await GetCertainProduct(params.slug);
